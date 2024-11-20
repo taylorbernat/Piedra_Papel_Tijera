@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Ejercicio_1.css">
+    </head>
+    <body>
+        <div id="principal">
+            <h1>Inicio de sesion</h1>
+            <div class="contenedor">
+                <input class="Informacion" type="text" placeholder="Nombre" id="campoNombre">
+                <p id="mensajeNombre">"Este espacio es obligatorio"</p>
+            </div>
+            <script>
+                
+                
+            </script>
+            
+
+            <div class="contenedor">
+                <input class="Informacion"  type="email" placeholder="Correo" >
+                <p id="mensajeCorreo">"Este espacio es obligatorio"</p>
+            </div>
+
+
+            <div class="contenedor">
+                <input class="Informacion" type="password" placeholder="Contraseña" >
+                <p id="mensajeContraseña">"Este espacio es obligatorio"</p>
+            </div>
+
+            <div>
+                <p class="Respuesta"></p>
+                <p class="Respuesta"></p>
+                <p class="Respuesta"></p>
+            </div>
+
+            <button id="boncito" >Enviar info</button>
+        </div>
+        <script>
+            let Respuestas=document.getElementsByClassName("Respuesta")
+            let campoNombre= document.getElementsByClassName("Informacion");
+            
+            
+                ConfirmNombre=campoNombre[0].addEventListener("input",(evento)=>{
+
+                    let letras=evento.target.value;
+                    if(letras.length>0){
+                        let aviso=document.getElementById("mensajeNombre");
+                        aviso.innerHTML="";
+            
+
+                        
+                    }
+                    else{
+                        let aviso=document.getElementById("mensajeNombre");
+                        aviso.innerHTML="<b>Campo Incorrecto</b>";
+                    }
+
+                    
+                });
+
+                ConfirmCorreo=campoNombre[1].addEventListener("input",(evento)=>{
+                    let letras=evento.target.value;
+                    if(letras.length<0 || (!evento.target.value.includes("@gmail.com"))){
+                        
+                        let aviso=document.getElementById("mensajeCorreo");
+                        aviso.innerHTML="<b>Campo Incorrecto</b>";
+
+                        
+                    }
+                    else{
+                        let aviso=document.getElementById("mensajeCorreo");
+                        aviso.innerHTML="";
+        
+                    }
+
+                });
+
+                ConfirmContraseña=campoNombre[2].addEventListener("input",(evento)=>{
+                    let letras=evento.target.value;
+                    if(letras.length>0){
+                        let aviso=document.getElementById("mensajeContraseña");
+                        aviso.innerHTML="";
+                        
+
+                        
+                    }
+                    else{
+                        let aviso=document.getElementById("mensajeContraseña");
+                        aviso.innerHTML="<b>Campo Incorrecto</b>";
+                    }
+
+                });
+                
+            let boton=document.getElementById("boncito").addEventListener("click",function (){
+                
+                let  InformacionTotal=document.getElementsByClassName("Informacion");
+            
+                    nombre = InformacionTotal[0].value;
+                    correo = InformacionTotal[1].value;
+                    contraseña = InformacionTotal[2].value;
+                    Respuestas[0].textContent="Nombre: "+nombre
+                    Respuestas[1].textContent="Correo: "+correo
+                    Respuestas[2].textContent="Contraseña: "+contraseña;
+                    InformacionTotal[0].value=""
+                    InformacionTotal[1].value=""
+                    InformacionTotal[2].value=""
+
+        
+                
+                //---------------------------------------------------------------------------------------------------------------------------
+            })
+                
+                
+            
+            
+        </script>
+    </body>
+</html>

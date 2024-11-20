@@ -1,0 +1,28 @@
+body{   
+    background: linear-gradient(to bottom, rgb(247, 135, 135), rgb(158, 158, 102),rgb(111, 243, 111));
+}
+
+#Contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    width: 40%;
+    height: 60%;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    margin-top: 5%;
+}
+h2{
+    text-align: center;
+}
+input{
+
+    width: 85%;
+    height: 10%;
+    font-size: 110%;
+}
+button{
+    width: 60%;
+    height: 5%;
+}
