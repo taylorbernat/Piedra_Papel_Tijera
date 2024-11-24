@@ -134,7 +134,7 @@ class Juego2 extends Juego{
             resultadoDiv.innerHTML = "Empate!";
             resultadoDiv.style.color = "white";
         }
-        else if((this.spock=="Spock" && random=="Tijeras") || (this.spock=="Spock" && random=="Piedra")){
+        else if(this.spock=="Spock" && random=="Tijeras" || this.spock=="Spock" && random=="Piedra" ){
             resultadoDiv.innerHTML = "¡Ganas!";
             resultadoDiv.style.color = "green";
         }
@@ -151,7 +151,7 @@ class Juego2 extends Juego{
             resultadoDiv.innerHTML = "Empate!";
             resultadoDiv.style.color = "white";
         }
-        else if(this.Lagarto=="Lagarto" && random=="Papel " || this.Lagarto=="Lagarto" && random=="Spock"){
+        else if(this.Lagarto=="Lagarto" && random=="Papel"  ||  this.Lagarto=="Lagarto" && random=="Spock"){
             resultadoDiv.innerHTML = "¡Ganas!";
             resultadoDiv.style.color = "green";
         }
@@ -394,6 +394,9 @@ TijeraToB.addEventListener("click",()=>{
     JuegoToB.ComprobarTijeras(random);
 
 })
+
+
+
 
 
 
