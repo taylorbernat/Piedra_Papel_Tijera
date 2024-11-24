@@ -1,0 +1,101 @@
+/*---------- Cabeza de página (Header) ----------*/
+.header {
+    background-color: #1abc9c; /* Un verde turquesa vibrante */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    border-bottom: 5px solid #e74c3c; /* Borde llamativo de color rojo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 3px; 
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); 
+}
+
+/* Botones de autenticación */
+.auth-buttons button {
+    background-color: #e74c3c; 
+    padding: 15px 25px;
+    margin: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #c0392b; 
+    
+}
+
+/*-------------------- Contenido --------------------*/
+#contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f39c12; 
+    width: 100%;
+    height: 50%;
+    padding: 50px 0;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+#ContenidoToB, #ContenidoP {
+    position: relative;
+    bottom: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #2c3e50; 
+    font-weight: bold;
+}
+
+/*------------------------- Pie de página ----------------------*/
+#Foot {
+    background-color: #2c3e50; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.1em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.foot-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Redes-links {
+    margin-top: 20px;
+}
+
+.Redes-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.Redes-links a:hover {
+    color: #f39c12; 
+
+}

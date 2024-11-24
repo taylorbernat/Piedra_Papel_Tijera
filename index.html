@@ -4,29 +4,63 @@
         <link rel="stylesheet" href="indexDecoracion.css">
     </head>
     <body>
-        <div>
+        <div class="header">
+            <div class="header-container">
+    
+                <h1>Juego de Piedra, Papel o Tijeras</h1>
 
-            <div>
-                <img src="" alt="">
+                <div class="auth-buttons">
+                    <button id="Registro" onclick="location.href='Registro.html'">Registrarse</button>
+                    <button id="IniciarSesion" onclick="location.href='InicioSesion.html'">Iniciar sesión</button>
+                </div>
             </div>
-            <div>
-                <button>Registrase</button>
-                <button>iniciar sesion</button>
+        </div>
+
+
+
+        <div id="contenido">
+            <div id="ContenidoToB">
+                <h3>Versión Extendida: Piedra, Papel o Tijeras, Lagarto, Spock (The Big Bang Theory)</h3>
+                <h4>Reglas del juego:</h4>
+                <ul>
+                    <li>Piedra vence a Tijeras (Piedra aplasta Tijeras)</li>
+                    <li>Tijeras vence a Papel (Tijeras cortan Papel)</li>
+                    <li>Papel vence a Piedra (Papel cubre Piedra)</li>
+                    <li>Piedra vence a Lagarto (Piedra aplasta Lagarto)</li>
+                    <li>Lagarto vence a Spock (Lagarto envenena a Spock)</li>
+                    <li>Spock vence a Tijeras (Spock destruye Tijeras)</li>
+                    <li>Tijeras vence a Lagarto (Tijeras decapitan Lagarto)</li>
+                    <li>Lagarto vence a Piedra (Lagarto come Piedra)</li>
+                    <li>Spock vence a Papel (Spock vaporiza Papel)</li>
+                    <li>Papel vence a Lagarto (Papel mata Lagarto)</li>
+                </ul>
             </div>
 
+
+            <div id="ContenidoP">
+                <h3>Versión Clásica: Piedra, Papel o Tijeras</h3>
+                <h4>Reglas del juego:</h4>
+                <ul>
+                    <li>Piedra vence a Tijeras (Piedra aplasta Tijeras).</li>
+                    <li>Tijeras vence a Papel (Tijeras cortan Papel)</li>
+                    <li>Papel vence a Piedra (Papel cubre Piedra)</li>
+                </ul>
+            </div>
+            
+        
         </div>
-
-
-
-        <div>
-
-
+            <div id="Foot">
+                <div class="foot-content">
+                    <p>&copy; 2024 Juego de Piedra, Papel o Tijeras.</p>
+                    <div class="Redes-links">
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <script  src="IndexInteracciones.js"></script>
 
-
-
-        <div>
-
-        </div>
     </body>
 </html>

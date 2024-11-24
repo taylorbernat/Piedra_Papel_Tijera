@@ -1,28 +1,57 @@
-body{   
-    background: linear-gradient(to bottom, rgb(247, 135, 135), rgb(158, 158, 102),rgb(111, 243, 111));
+body {
+    background: linear-gradient(to bottom, rgb(242, 242, 242), rgb(189, 189, 189), rgb(119, 119, 119));
+    font-family: 'Arial', sans-serif;
 }
 
-#Contenedor{
+#Contenedor {
     display: flex;
     flex-direction: column;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     width: 40%;
     height: 60%;
     justify-content: space-around;
-    align-items: center;
     justify-self: center;
+    align-items: center;
     margin-top: 5%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-h2{
-    text-align: center;
-}
-input{
 
-    width: 85%;
-    height: 10%;
-    font-size: 110%;
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
 }
-button{
+
+input {
+    width: 85%;
+    height: 40px;
+    font-size: 110%;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #f39c12;
+    outline: none;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+button {
     width: 60%;
-    height: 5%;
+    height: 40px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 110%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
 }
